@@ -9,8 +9,7 @@ BreadCrumbExpress
 **After that add in your application class with one static method like this:**
  
  `
- using BreadCrumbExpress;
- 
+ using BreadCrumbExpress; 
  public static class HtmlHelper  
  {
 	public static string BreadCrumbs(this System.Web.Mvc.HtmlHelper html)
@@ -22,8 +21,10 @@ BreadCrumbExpress
  `
  
  **After that make the call to the Helper from within the View of MVC.**
- >For MVC 2 : <%=Html.BreadCrumbs() %> 
- 
+ >For MVC 2 :
+ `
+ <%=Html.BreadCrumbs() %> 
+ `
  
  ## 2. **Creating and Configuring File SiteMap**
  
