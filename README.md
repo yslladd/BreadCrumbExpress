@@ -26,7 +26,7 @@ BreadCrumbExpress
  <%=Html.BreadCrumbs() %> 
  `
  
- ## 2. **Creating and Configuring File SiteMap**
+ ##2.**Creating and Configuring File SiteMap**
  
  First Right click on your project and select Add > New Item
  Then select file SiteMap. xml file will be created that maps our pages.
