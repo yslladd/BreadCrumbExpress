@@ -10,6 +10,21 @@ namespace BreadCrumbExpress
     {
         #region BreadCrumb
 
+        private static string ul = "navegacao";
+
+        public static string UlClass
+        {
+            get
+            {
+                return ul;
+            }
+            set
+            {
+                ul = value;
+            }
+        }
+
+
         private static string Path
         {
             get
@@ -29,15 +44,14 @@ namespace BreadCrumbExpress
         public static string BreadCrumbs(System.Web.Mvc.HtmlHelper html)
         {
             var sb = new StringBuilder();
-
-            //url poderá vir por viewdata ou pelo request
+            
             string url = GetUrlBreadCrumb(html);
 
-            sb.Append("<ul class='navegacao'>");
+            sb.Append("<ul class='" + ul + "'>");
 
             if (SiteMap.RootNode.Url.ToLower() == url.ToLower())
             {
-                sb.AppendLine("<li class='navegacao selected'>");
+                sb.AppendLine("<li class='" + ul + " selected'>");
                 sb.AppendLine(SiteMap.RootNode.Title);
                 sb.AppendLine("</li>");
             }
@@ -69,7 +83,7 @@ namespace BreadCrumbExpress
                 {
                     if (i == nodes.Count - 1)
                     {
-                        sb.AppendLine("<li class='navegacao selected'>");
+                        sb.AppendLine("<li class='" + ul + " selected'>");
                         sb.AppendLine(item.Title);
                     }
                     else
@@ -86,9 +100,7 @@ namespace BreadCrumbExpress
             return sb.ToString();
         }
         
-        #endregion       
-
-    
+        
         public static void BuildList(SiteMapNode node, ref List<SiteMapNode> nodes)
         {
             if (node != null)
@@ -101,37 +113,11 @@ namespace BreadCrumbExpress
         public static string GetUrlBreadCrumb(System.Web.Mvc.HtmlHelper html)
         {
             var url = HttpContext.Current.Request.RawUrl.Replace("+", " ");
-
-            if (url.Contains("Blog/Busca"))
-            {
-                //~/Blog/Busca/55/7-2011
-                url = Path + "Blog/Busca/{id}/{nome}";
-            }
-            else if (url.Contains("Blog/"))
-            {
-                //~/Blog/55/Blog do Estrategista
-                var urlArr = url.Replace(Path, "/").Split('/');
-
-                //var pastas = ItauHttp.Path.Count(x => x == '/') - 1;
-
-                var id = urlArr[urlArr.Count() - 2].ToString();
-                var title = urlArr[urlArr.Count() - 1].ToString();
-                url = Path + "Blog/{id}/{nome}";
-
-                html.ViewData.Add("UrlBreadCrumb", string.Format("~/Blog/{0}/{1}", id, title));
-                html.ViewData.Add("TitleBreadCrumb", title);
-            }
-            else if (url.Contains("/PainelCotacoes?viewValue=1"))
-            {
-                url = url.Replace("?viewValue=1&nomeCarteira=MINHA%20CARTEIRA", "");
-            }
-            else
-            {
-                html.ViewData.Add("UrlBreadCrumb", null);
-                html.ViewData.Add("TitleBreadCrumb", null);
-            }
-
+            html.ViewData.Add("UrlBreadCrumb", null);
+            html.ViewData.Add("TitleBreadCrumb", null);
             return url;
         }
+    
+        #endregion
     }
 }
