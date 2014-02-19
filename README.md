@@ -22,10 +22,8 @@ BreadCrumbExpress
  `
  
  **After that make the call to the Helper from within the View of MVC.**
- >For MVC 2 :
- `
- <%=Html.BreadCrumbs() %> 
- `
+ >For MVC 2 : <%=Html.BreadCrumbs() %> 
+ 
  
  ## 2. **Creating and Configuring File SiteMap**
  
