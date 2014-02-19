@@ -4,7 +4,7 @@ BreadCrumbExpress
 ## 1. **How to use**
 
 **First download the NuGet project for your application.**
- [Donwload](https://www.nuget.org/packages/BreadCrumbExpress/1.0.0 “Download”)
+ [Donwload](https://www.nuget.org/packages/BreadCrumbExpress/1.0.0)
 
 **After that add in your application class with one static method like this:**
  
