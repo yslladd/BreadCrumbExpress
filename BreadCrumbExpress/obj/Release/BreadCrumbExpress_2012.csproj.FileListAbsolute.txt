@@ -1,0 +1,4 @@
+C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\bin\Release\BreadCrumbExpress.dll
+C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\bin\Release\BreadCrumbExpress.pdb
+C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\obj\Release\BreadCrumbExpress.dll
+C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\obj\Release\BreadCrumbExpress.pdb
