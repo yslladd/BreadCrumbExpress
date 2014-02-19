@@ -35,7 +35,7 @@ BreadCrumbExpress
  Made it put a code snippet explaining how to set up our us, these will be important to set the breadcrumb links.
  We registering nodes respecting the hierarchy of pages. example:
  
- **Exemplo de SiteMap**
+ **Exemple de SiteMap**
  `
  <?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">  
@@ -46,4 +46,20 @@ BreadCrumbExpress
 	</siteMapNode>
   </siteMapNode>  
  `
+ 
+  
+## 3. **Return Html**
+ `
+<ul class="navegacao"><li>
+<a href="/">Home</a></li>
+<li>
+<a href="/About">About</a></li>
+<li class="navegacao selected">
+Me
+</li>
+</ul>
+ `
+ 
+ 
+
  
