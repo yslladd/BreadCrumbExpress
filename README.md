@@ -36,7 +36,7 @@ BreadCrumbExpress
  We registering nodes respecting the hierarchy of pages. example:
  
  **Exemple de SiteMap**
- ```c#
+ ```xml
  <?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">  
   <!-- first page Home -->
