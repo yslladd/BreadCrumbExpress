@@ -2,3 +2,7 @@ C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\bin\Release\BreadCru
 C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\bin\Release\BreadCrumbExpress.pdb
 C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\obj\Release\BreadCrumbExpress.dll
 C:\_Desenvolvimento.Net\BreadCrumbExpress\BreadCrumbExpress\obj\Release\BreadCrumbExpress.pdb
+C:\Users\daniel.melo\Documents\GitHub\BreadCrumbExpress\BreadCrumbExpress\bin\Release\BreadCrumbExpress.dll
+C:\Users\daniel.melo\Documents\GitHub\BreadCrumbExpress\BreadCrumbExpress\bin\Release\BreadCrumbExpress.pdb
+C:\Users\daniel.melo\Documents\GitHub\BreadCrumbExpress\BreadCrumbExpress\obj\Release\BreadCrumbExpress.dll
+C:\Users\daniel.melo\Documents\GitHub\BreadCrumbExpress\BreadCrumbExpress\obj\Release\BreadCrumbExpress.pdb

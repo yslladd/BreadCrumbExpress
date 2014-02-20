@@ -8,7 +8,7 @@ BreadCrumbExpress
 
 **After that add in your application class with one static method like this:**
  
- `
+ ```c#
  using BreadCrumbExpress; 
  public static class HtmlHelper  
  {
@@ -18,13 +18,13 @@ BreadCrumbExpress
         return BreadCrumb.BreadCrumbs(html);
     }
  }
- `
+ ```
  
  **After that make the call to the Helper from within the View of MVC.**
- >For MVC 2 :
- `
+ **For MVC 2 :**
+ ```c#
  <%=Html.BreadCrumbs() %> 
- `
+ ```
  
 ## 2. **Creating and Configuring File SiteMap**
 
@@ -36,7 +36,7 @@ BreadCrumbExpress
  We registering nodes respecting the hierarchy of pages. example:
  
  **Exemple de SiteMap**
- `
+ ```c#
  <?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">  
   <!-- first page Home -->
@@ -45,19 +45,18 @@ BreadCrumbExpress
 		 <siteMapNode title="About Me" url="~/About/Me"/>
 	</siteMapNode>
   </siteMapNode>  
- `
+ ```
  
   
 ## 3. **Return Html**
 
- `
+ ```html
  <ul class="navegacao">
 	<li><a href="/">Home</a></li>
 	<li><a href="/About">About</a></li>
 	<li class="navegacao selected">Me</li>
  </ul>
- `
- 
+ ``` 
  
 
  
